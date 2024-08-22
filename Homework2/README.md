@@ -1,3 +1,4 @@
-Convert from Farenheit to Celsius and back. 
+Convert from Fahrenheit to Celsius and back. 
 
-Select A and enter a Celsius temperature to find the Farenheit equivilent, or select B for the reverse.
+Run ConvertTemp.py
+Select A and enter a Celsius temperature to find the Fahrenheit equivalent, or select B for the reverse.
