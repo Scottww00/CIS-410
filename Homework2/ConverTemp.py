@@ -6,27 +6,37 @@ Created on Wed Aug 21 19:09:34 2024
 @author: william
 """
 
-def FtoC(F): #Convert from Fahrenheit to Celsius"
-    C = (F - 32) * 5 / 9
-    return C
+import FtoC
+import CtoF
 
-def CtoF(C): #Convert from Celsius to Fahrenheit
-    F = (C * 9 / 5) + 32
-    return F
+def title():
+    print('''Convert from C to F and Back
+          By William Scott''')
 
-
-def convertTemp():
+def menu(): #Display the Menu
     print("A: Convert from Celsius to Fahrenheit")
     print("B: Convert from Fahrenheit to Celsius")
-    convert = input("A or B: ")
+    convert = input("A or B or Exit: ")
+    return convert
+
+
+def main():
+    
+    convert = menu()
 
     if convert == "A" or convert == "a":
-        print(CtoF(float(input("Temp?: "))))
+        print(str(round(CtoF.CtoF(float(input("Temp?: "))))) + "°F")
         
     elif convert == "B" or convert == "b":
-        print(FtoC(float(input("Temp?: "))))
+        print(str(round(FtoC.FtoC(float(input("Temp?: "))))) + "°C")
+    
+    elif convert == "Exit" or convert == "exit":
+        print("Goodbye!")
+        return
     else:
         print("Please pick a valid option.")
-        convertTemp()
-
-convertTemp()
+    main()
+    
+    
+title()
+main()
