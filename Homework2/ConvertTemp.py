@@ -13,7 +13,7 @@ def title():
     print('''Convert from C to F and Back
           By William Scott''')
 
-def menu(): #Display the Menu
+def menu():
     print("A: Convert from Celsius to Fahrenheit")
     print("B: Convert from Fahrenheit to Celsius")
     convert = input("A or B or Exit: ")
