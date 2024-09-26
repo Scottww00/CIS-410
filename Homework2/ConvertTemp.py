@@ -10,7 +10,7 @@ import FtoC
 import CtoF
 
 def title():
-    print('''Convert from C to F and Back
+    print('''Convert from °C to °F and Back
           By William Scott''')
 
 def menu():
